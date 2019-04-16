@@ -1,0 +1,14 @@
+version: "3"
+services:
+  int:
+    container_name: int
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "npm start"
+    ports:
+      - "8099:80"
+    environment:
+      - PORT=80
+    volumes:
+      - .:/srv/app
