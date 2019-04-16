@@ -1,0 +1,36 @@
+{
+    "apiVersion": 1,
+    "key": "com.lovely.integration.jira",
+    "name": "Build for Jira",
+    "description": "The best demo for the interview",
+    "vendor": {
+        "name": "Test",
+        "url": "https://www.invisionapp.com"
+    },
+    "baseUrl": "http://localhost:8099",
+    "authentication": {
+        "type": "none"
+    },
+    "scopes": [
+        "READ",
+        "WRITE",
+        "DELETE"
+    ],
+    "modules": {
+        "webPanels": [
+            {
+                "key": "test-for-interview-webpanel",
+                "location": "atl.jira.view.issue.left.context",
+                "name": {
+                    "value": "Best app ever"
+                },
+                "layout": {
+                    "width": "100%",
+                    "height": "200px"
+                },
+                "weight": 250,
+                "url": "/"
+            }
+        ]
+    }
+}
